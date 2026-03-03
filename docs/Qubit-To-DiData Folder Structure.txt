@@ -1,0 +1,32 @@
+Qubit-To-DiData/
+│
+├── data/                        # Data files at different processing stages
+│   ├── raw/                     # Raw data files (e.g., Qubit output)
+│   ├── prepped/                 # Preprocessed data ready for formatting
+│   ├── final/                   # Final, formatted data for DiData integration
+│   ├── archived/                # Archived data (older files or backups)
+│   └── backups/                 # Backup of critical data and configurations
+│
+├── src/                         # Source code files for data processing
+│   ├── __init__.py              # Marks the directory as a Python package
+│   ├── utils.py                 # Utility functions (e.g., file handling, logging)
+│   ├── watchdog.py              # WatchDog class to monitor file directories
+│   ├── qubit_data.py            # Class for handling Qubit data loading/saving
+│   ├── data_type_identifier.py  # Class for identifying data types based on naming patterns
+│   ├── data_formatter.py        # Class for formatting and structuring data for analysis
+│   ├── main.py                  # Main entry point to execute the pipeline
+│   └── config.py                # Configuration file for settings like paths, environment variables
+│
+├── tests/                       # Unit and integration tests for the pipeline
+│   ├── __init__.py              # Marks the directory as a Python package
+│   ├── test_qubit_data.py       # Unit tests for Qubit data handling
+│   ├── test_data_type_identifier.py # Tests for data type identification logic
+│   └── test_data_formatter.py   # Tests for data formatting logic
+│
+├── docs/                        # Documentation for project setup and usage
+│   └── README.md                # Overview, setup instructions, and usage guide
+│
+├── .gitignore                   # Git ignore rules (e.g., to exclude temporary files, caches)
+├── requirements.txt             # List of dependencies (e.g., pandas, numpy)
+├── setup.py                     # Setup script for easy project installation
+└── LICENSE                      # Project license information (if applicable)
